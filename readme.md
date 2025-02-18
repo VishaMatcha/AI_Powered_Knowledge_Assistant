@@ -90,3 +90,44 @@ pip install flask streamlit requests
 
 ### 6️⃣ Set Your API Key (Environment Variable)
 To keep the API key **secure**, set it as an **environment variable**.
+**On Mac/Linux:**
+```bash
+export HUGGINGFACE_API_KEY="your_api_key_here"
+```
+
+**On Windows (PowerShell):**
+```powershell
+$env:HUGGINGFACE_API_KEY="your_api_key_here"
+```
+
+---
+
+## 🖥️ Backend Code (`chatbot_backend.py`)
+```python
+import requests
+import os
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
+API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct"
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    data = request.get_json()
+    question = data.get("question")
+    if not question:
+        return jsonify({"error": "No question provided"}), 400
+    headers = {"Authorization": f"Bearer {HUGGINGFACE_API_KEY}"}
+    payload = {"inputs": question}
+    response = requests.post(API_URL, json=payload, headers=headers)
+    if response.status_code == 200:
+        answer = response.json()[0].get("generated_text", "No response received.")
+        return jsonify({"answer": answer})
+    else:
+        return jsonify({"error": f"Failed to fetch response: {response.text}"}), 500
+
+if __name__ == "__main__":
+    app.run(port=5000, debug=True)
+```
