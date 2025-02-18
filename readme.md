@@ -159,3 +159,64 @@ if st.button("Get Answer"):
 
 ---
 
+### 7️⃣ Run the Backend
+```bash
+python chatbot_backend.py
+```
+✔️ This starts the API at **`http://localhost:5000`**.
+
+---
+
+### 8️⃣ Run the Frontend
+```bash
+streamlit run chatbot_frontend.py
+```
+✔️ This launches the UI at **`http://localhost:8501`**.
+
+---
+
+## 📸 User Interface Preview  
+![UI Preview](Screenshot%202025-02-18%20at%2010.55.14%20AM.png)
+
+---
+
+## 🛠️ Troubleshooting
+### ❌ Issue: "Error fetching response from backend"
+- **Check if backend is running** → Run `python chatbot_backend.py`
+- **Ensure frontend connects to `http://localhost:5000/chat`**
+- **Check API key** → Ensure `HUGGINGFACE_API_KEY` is set correctly.
+
+### ❌ Issue: "Invalid API Key"
+- **Regenerate a key** from [Hugging Face Settings](https://huggingface.co/settings/tokens)
+- **Restart backend after updating the key**.
+
+---
+
+## 🔄 Future Enhancements
+✔️ **Enhance Response Accuracy** with **Retrieval-Augmented Generation (RAG)**  
+✔️ **Support Multi-Modal Inputs** (text, images, etc.)  
+✔️ **Deploy to Cloud** (AWS, Google Cloud, etc.)  
+
+---
+
+## 📜 License
+This project is **open-source** and available under the **MIT License**.
+
+---
+
+## 🚀 Now You Can Upload to GitHub
+### 1️⃣ Add Files
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+```
+
+### 2️⃣ Push to GitHub
+```bash
+git remote add origin https://github.com/yourusername/AI_Powered_Knowledge_Assistant.git
+git branch -M main
+git push -u origin main
+```
+
+---
