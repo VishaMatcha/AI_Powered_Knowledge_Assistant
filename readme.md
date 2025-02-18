@@ -1,6 +1,4 @@
-readme_content = """# AI-Powered Knowledge Assistant 🚀  
-
-An AI-driven **knowledge retrieval and question-answering system** using **Hugging Face’s free API** to generate intelligent responses.
+n AI-driven **knowledge retrieval and question-answering system** using **Hugging Face’s free API** to generate intelligent responses.
 
 ---
 
