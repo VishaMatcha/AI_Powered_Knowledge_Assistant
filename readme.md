@@ -1,4 +1,4 @@
-n AI-driven **knowledge retrieval and question-answering system** using **Hugging Face’s free API** to generate intelligent responses.
+AI-driven **knowledge retrieval and question-answering system** using **Hugging Face’s free API** to generate intelligent responses.
 
 ---
 
@@ -197,10 +197,6 @@ streamlit run chatbot_frontend.py
 
 ---
 
-## 📜 License
-This project is **open-source** and available under the **MIT License**.
-
----
 
 ## 🚀 Now You Can Upload to GitHub
 ### 1️⃣ Add Files
