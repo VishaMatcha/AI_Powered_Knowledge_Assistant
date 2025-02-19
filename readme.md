@@ -1,4 +1,13 @@
-AI-driven **knowledge retrieval and question-answering system** using **Hugging Face’s free API** to generate intelligent responses.
+# AI-Powered Knowledge Assistant 🚀  
+
+An AI-driven **knowledge retrieval and question-answering system** using **Hugging Face’s free API** to generate intelligent responses.
+
+---
+
+## 📸 User Interface Preview  
+Below is how the AI-Powered Knowledge Assistant looks when running:
+
+![UI Preview](frontend_ui.png)
 
 ---
 
