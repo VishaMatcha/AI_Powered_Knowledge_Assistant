@@ -182,10 +182,6 @@ streamlit run chatbot_frontend.py
 
 ---
 
-## 📸 User Interface Preview  
-![UI Preview](Screenshot%202025-02-18%20at%2010.55.14%20AM.png)
-
----
 
 ## 🛠️ Troubleshooting
 ### ❌ Issue: "Error fetching response from backend"
